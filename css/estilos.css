@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*propiedades body*/
+body{
+    background-image: linear-gradient(to right, grey, black);
+}
+
+.padre{
+    display: flex;
+}
+
+.cajita{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    margin: 30px;
+}
+
+.uno{
+    border: 3px solid green;
+    /*transform: translate(20px, 50px);*/
+    /*transform:rotate(200deg)*/
+    /*transform: rotateX(70deg);*/
+    /*transform: scale(1.0)*/
+    /*transform: skew O skewY(20deg, 10deg)*/}
+
+    /*hover es una pseudo clase que nos permite darnos estilos para cuando el usuario pase el mouse por el elemento*/
+.uno:hover{
+    background-color: red;
+    transform: scale(1.3);
+    transition: 2s;
+}
+.dos{
+    border: 3px solid red;
+}
+/*propiedades de animacion*/
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+img{
+    width: 40%;
+}
+.agrandar{
+    animation-name: agrandar;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes agrandar {
+    from{
+        transform: scale(1.0);
+    }
+
+    to{
+        transform:scale(1.2)
+    }
+}
+.aparecer{
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes aparecer {
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}

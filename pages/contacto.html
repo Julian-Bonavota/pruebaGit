@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacto - BF Cordoba</title>
+</head>
+<body>
+    <header>
+        <h1>Contacto BF cordoba</h1>
+        <nav>
+            <ul>
+              <li> <a href="../index.html">Home</a> 
+               </li>
+              <li>
+                  <a href="nosotros.html">nosotros</a>
+              </li>
+              <li>
+                  <a href="productos.html">productos</a>
+              </li>
+              <li>
+                  <a href="herramientaselectricas.html">Herramientas electricas</a>
+              </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!--crear nuestro formulario-->
+        <form>
+            <fieldset>
+                <legend> Formulario </legend>
+                <div>
+                    <label for="Nombre">completa tu nombre</label><!--asigna que se va a poner en el campo-->
+                    <input type="text" name="Nombre" placeholder="completa tu nombre y apellido"><!--en name va lo que puse en el for. El placeholder es lo que aparece en la barrita antes de escribir-->
+
+                </div>
+
+                <div>
+                    <label for="email">complete su email</label>
+                    <input type="email" required placeholder="completa tu email" > <!--el requiered sirve para que si no pone el mail no lo deje pasar de pagina--> 
+                </div>
+
+                <div>
+                    <label for="pais">seleccione su pais</label>
+                    <select name="pais"> <!--me crea la barrita hacia abajo la que desplega opciones-->
+                        <option value="">Selecciona tu pais</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="sexo">genero</label>
+                    <input type="radio" name="sexo"value="hombre">hombre <!--el radio crea el potonsito que cuando se clickea se pone negro/el name y value se usa para que solo pueda elegir una opcion sola-->
+                    <input type="radio" name="sexo" value="mujer">mujer
+                    <input type="radio" name="sexo" value="no binario">no binario
+                </div>
+
+                <div>
+                    <label for="password">contraseña</label>
+                    <input type="password" required >
+                </div>
+                
+                <div>
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="resetear" > <!--se usa esta parte para enviar o reiniciarel formulario--> 
+                </div>
+            </fieldset>
+        </form>
+    </main> 
+    
+    <footer>
+        <h6>todos los derechos reservados</h6>
+    </footer>
+</body>
+</html>
